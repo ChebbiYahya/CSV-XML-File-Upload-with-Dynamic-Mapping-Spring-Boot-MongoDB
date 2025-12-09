@@ -1,0 +1,6 @@
+1️⃣ Configuration: switch from application.properties to application.yml (MongoDB)
+2️⃣ pom.xml: remove JPA/MySQL and add MongoDB
+3️⃣ Employee: change from JPA @Entity to MongoDB @Document
+4️⃣ Repository: replace JpaRepository with MongoRepository (update your EmployeeRepository)
+5️⃣ EmployeeServiceImpl: small cleanup (remove the @Transactional annotation — optional, but more logical without JPA)
+6️⃣ The rest of the code: remains unchanged

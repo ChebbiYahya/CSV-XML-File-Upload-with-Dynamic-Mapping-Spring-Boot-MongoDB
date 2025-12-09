@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="employees.xsd">
+  <employee>
+    <id>56</id>
+    <firstName>John</firstName>
+    <lastName>Doe</lastName>
+    <position>Software Engineer</position>
+    <department>IT</department>
+    <hireDate>2020-01-15</hireDate>
+    
+  </employee>
+  <employee>
+    <id>57</id>
+    <firstName>Jane</firstName>
+    <lastName>Smith</lastName>
+    <position>Project Manager</position>
+    <department>Operations</department>
+    <hireDate>2019-05-01</hireDate>
+    </employee>
+</employees>

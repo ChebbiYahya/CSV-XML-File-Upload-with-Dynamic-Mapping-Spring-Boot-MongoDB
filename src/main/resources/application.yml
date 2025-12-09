@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: UploadFileAndDataPersistWithMongoDB
+
+
+  mongodb:
+      uri: mongodb://localhost:27017/data_persist_db
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api

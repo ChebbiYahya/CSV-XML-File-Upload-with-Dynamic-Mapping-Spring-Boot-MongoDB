@@ -1,0 +1,21 @@
+id,firstName,lastName,position,department,hireDate,salary
+1,John,Doe,Software Engineer,IT,2020-01-15,75000
+2,Jane,Smith,Project Manager,Operations,2019-05-01,85000
+3,Michael,Johnson,Data Analyst,Finance,2018-03-15,65000
+4,Emily,Davis,HR Specialist,HR,2017-11-20,70000
+5,David,Wilson,Marketing Manager,Marketing,2016-07-30,90000
+6,Alice,Brown,Accountant,Finance,2015-02-10,62000
+7,Robert,Jones,Designer,Marketing,2018-06-22,68000
+8,Mary,Williams,Product Manager,Product,2017-09-15,85000
+9,James,Garcia,DevOps Engineer,IT,2021-04-12,78000
+10,Linda,Miller,Customer Support,Support,2019-08-25,56000
+11,Daniel,Martinez,Sales Manager,Sales,2020-11-10,91000
+12,Patricia,Rodriguez,UX Designer,Design,2018-02-18,74000
+13,Charles,Martinez,Business Analyst,Business,2019-03-30,67000
+14,Susan,Lopez,HR Manager,HR,2016-05-21,80000
+15,Christopher,Wilson,Network Engineer,IT,2017-12-05,73000
+16,Jessica,White,Legal Advisor,Legal,2015-11-13,90000
+17,Matthew,Clark,Consultant,Consulting,2018-08-29,85000
+18,Amanda,Harris,Content Writer,Content,2020-07-14,58000
+19,Brian,Martinez,SEO Specialist,Marketing,2019-09-25,66000
+20,Rebecca,King,Office Manager,Administration,2017-04-17,62000

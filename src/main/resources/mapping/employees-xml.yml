@@ -1,0 +1,24 @@
+rootElement: employees
+recordElement: employee
+fields:
+  - name: id
+    tag: id
+    type: LONG
+  - name: firstName
+    tag: firstName
+    type: STRING
+  - name: lastName
+    tag: lastName
+    type: STRING
+  - name: position
+    tag: position
+    type: STRING
+  - name: department
+    tag: department
+    type: STRING
+  - name: hireDate
+    tag: hireDate
+    type: LOCAL_DATE
+  - name: salary
+    tag: salary
+    type: DECIMAL
