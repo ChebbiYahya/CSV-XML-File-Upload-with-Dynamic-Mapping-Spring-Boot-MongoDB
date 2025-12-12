@@ -10,4 +10,5 @@ public interface EmployeeService {
     void saveAll(List<EmployeeDto> employees);
     List<Employee> getAll();
     Employee getEmployeeById(Long id);
+    boolean existsById(Long id);
 }

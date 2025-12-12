@@ -4,21 +4,28 @@ columns:
   - name: id
     header: id
     type: LONG
+    required: true
   - name: firstName
     header: firstName
     type: STRING
+    required: true
   - name: lastName
     header: lastName
     type: STRING
+    required: true
   - name: position
     header: position
     type: STRING
+    required: false
   - name: department
     header: department
     type: STRING
+    required: false
   - name: hireDate
     header: hireDate
-    type: LOCAL_DATE   # format ISO yyyy-MM-dd
+    type: LOCAL_DATE
+    required: false
   - name: salary
     header: salary
     type: DECIMAL
+    required: false

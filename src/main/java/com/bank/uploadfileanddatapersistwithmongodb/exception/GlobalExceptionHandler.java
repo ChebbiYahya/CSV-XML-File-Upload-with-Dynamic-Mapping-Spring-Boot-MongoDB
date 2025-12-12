@@ -47,6 +47,72 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(apiError);
     }
 
+    @ExceptionHandler(MissingRequiredFieldException.class)
+    public ResponseEntity<ApiError> handleMissingRequiredField(
+            MissingRequiredFieldException ex, HttpServletRequest request) {
+
+        ApiError apiError = ApiError.of(
+                HttpStatus.UNPROCESSABLE_ENTITY.value(),
+                "Missing required field",
+                ex.getMessage(),
+                request.getRequestURI()
+        );
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(apiError);
+    }
+
+    @ExceptionHandler(TypeMismatchException.class)
+    public ResponseEntity<ApiError> handleTypeMismatch(
+            TypeMismatchException ex, HttpServletRequest request) {
+
+        ApiError apiError = ApiError.of(
+                HttpStatus.UNPROCESSABLE_ENTITY.value(),
+                "Format / type mismatch",
+                ex.getMessage(),
+                request.getRequestURI()
+        );
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(apiError);
+    }
+
+    @ExceptionHandler(SchemaValidationException.class)
+    public ResponseEntity<ApiError> handleSchemaValidation(
+            SchemaValidationException ex, HttpServletRequest request) {
+
+        ApiError apiError = ApiError.of(
+                HttpStatus.UNPROCESSABLE_ENTITY.value(),
+                "Schema validation error",
+                ex.getMessage(),
+                request.getRequestURI()
+        );
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(apiError);
+    }
+
+    @ExceptionHandler(StreamProcessingException.class)
+    public ResponseEntity<ApiError> handleStreamProcessing(
+            StreamProcessingException ex, HttpServletRequest request) {
+
+        ApiError apiError = ApiError.of(
+                HttpStatus.UNPROCESSABLE_ENTITY.value(),
+                "Stream processing error",
+                ex.getMessage(),
+                request.getRequestURI()
+        );
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(apiError);
+    }
+
+    @ExceptionHandler(LogChargementNotFoundException.class)
+    public ResponseEntity<ApiError> handleLogChargementNotFound(
+            LogChargementNotFoundException ex, HttpServletRequest request) {
+
+        ApiError apiError = ApiError.of(
+                HttpStatus.NOT_FOUND.value(),
+                "Log chargement not found",
+                ex.getMessage(),
+                request.getRequestURI()
+        );
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(apiError);
+    }
+
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApiError> handleGeneric(
             Exception ex, HttpServletRequest request) {

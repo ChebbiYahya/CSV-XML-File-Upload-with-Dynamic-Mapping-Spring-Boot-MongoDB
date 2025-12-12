@@ -41,4 +41,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee getEmployeeById(Long id) {
         return repository.findById(id).orElseThrow(()-> new EmployeeNotFoundException("Employee not found with id: " + id));
     }
+
+    @Override
+    public boolean existsById(Long id) {
+        return repository.existsById(id);
+    }
 }

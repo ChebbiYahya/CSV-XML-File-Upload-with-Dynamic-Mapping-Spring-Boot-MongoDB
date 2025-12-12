@@ -4,21 +4,28 @@ fields:
   - name: id
     tag: id
     type: LONG
+    required: true
   - name: firstName
     tag: firstName
     type: STRING
+    required: true
   - name: lastName
     tag: lastName
     type: STRING
+    required: true
   - name: position
     tag: position
     type: STRING
+    required: false
   - name: department
     tag: department
     type: STRING
+    required: false
   - name: hireDate
     tag: hireDate
     type: LOCAL_DATE
+    required: false
   - name: salary
     tag: salary
     type: DECIMAL
+    required: false
